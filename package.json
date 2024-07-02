@@ -1,0 +1,24 @@
+{
+  "name": "festival-musica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alonso1298/Festival-Musica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Alonso Sagrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alonso1298/Festival-Musica/issues"
+  },
+  "homepage": "https://github.com/alonso1298/Festival-Musica#readme"
+}
