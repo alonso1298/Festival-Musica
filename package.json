@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/alonso1298/Festival-Musica/issues"
   },
-  "homepage": "https://github.com/alonso1298/Festival-Musica#readme"
+  "homepage": "https://github.com/alonso1298/Festival-Musica#readme",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
 }
