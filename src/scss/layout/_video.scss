@@ -1,0 +1,29 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.video {
+    position: relative;
+    .overlay {
+        position: absolute;
+        background: linear-gradient(
+            270deg,
+            rgba(v.$morado, 60%),
+            rgba(darken( v.$morado, 20% ), 90%)
+        ); //Darken toma el color que tenemos y lo oscurece en un porcentaje dado
+        inset: 0; // cubre todo el espacio del video 
+    }
+
+    video {
+
+    }
+}
+
+.contenido-video {
+
+    h2 {
+
+    }
+    p {
+        
+    }
+}

@@ -442,3 +442,12 @@ body > section {
   max-width: 120rem;
   margin: 0 auto;
 }
+
+.video {
+  position: relative;
+}
+.video .overlay {
+  position: absolute;
+  background: linear-gradient(270deg, rgba(117, 47, 151, 0.6), rgba(57, 23, 73, 0.9));
+  inset: 0;
+}
