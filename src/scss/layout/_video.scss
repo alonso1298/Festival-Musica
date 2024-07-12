@@ -3,6 +3,9 @@
 
 .video {
     position: relative;
+    min-height: 50rem;
+    max-height: 70rem;
+    overflow: hidden;
     .overlay {
         position: absolute;
         background: linear-gradient(
@@ -11,19 +14,36 @@
             rgba(darken( v.$morado, 20% ), 90%)
         ); //Darken toma el color que tenemos y lo oscurece en un porcentaje dado
         inset: 0; // cubre todo el espacio del video 
+
+        display: flex;
+        align-items: center;
     }
 
     video {
-
+        display: block;
+        width: auto;
+        @include m.desktop {
+            width: 100%;
+        }
     }
 }
 
 .contenido-video {
+    z-index: 10;
 
     h2 {
-
+        color: v.$blanco;
+        font-size: 7rem;
+        margin: 0;
     }
     p {
-        
+        background-color: v.$rosa;
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        color: v.$blanco;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin: 0;
     }
 }
