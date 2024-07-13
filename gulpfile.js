@@ -5,9 +5,9 @@ import gulpSass from 'gulp-sass'
 const sass = gulpSass(dartSass)
 
 export function css(done){
-    src('src/scss/app.scss')
+    src('src/scss/app.scss', {sourcemaps: true}) //sourcemaps podemos saber en que archivo de sass se encuentra el codigo para modificarlo
         .pipe( sass().on('error', sass.logError) )
-        .pipe( dest('build/css') )
+        .pipe( dest('build/css', {sourcemaps: true}) )
 
     done()
 }
