@@ -26,3 +26,9 @@
     max-width: 120rem;
     margin: 0 auto;
 }
+
+@mixin grid($columnas : 1, $gap  : 5rem) { //con $ se le pasan parametros a los mixins, con : se le pasa valores por default
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
+}
