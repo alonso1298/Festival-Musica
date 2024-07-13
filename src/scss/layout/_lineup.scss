@@ -32,3 +32,27 @@
         text-align: center;
     }
 }
+
+.calendario {
+    @include m.resetear-lista;
+
+    li{
+        padding: 2.5rem;
+        font-weight: 700;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+.bg-amarillo {
+    background-color: v.$amarillo;
+    li:nth-child(odd){ //odd quiere decir impar (en este caso en los li impares)
+        background-color: lighten(v.$amarillo, 5%); // lighten sirve para aclarar un color y solo es de SASS
+    }
+}
+.bg-verde{
+    background-color: v.$verde;
+    li:nth-child(odd){ 
+        background-color: lighten(v.$verde, 5%); 
+    }
+}
