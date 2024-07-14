@@ -23,3 +23,10 @@
         }
     }
 }
+
+.modal {
+    position: fixed; //fixed lo que hace es que el elemento queda fijo, no se puede mover
+    inset: 0;
+
+    background-color: rgba(v.$negro, 0.5)
+}
