@@ -27,6 +27,33 @@
 .modal {
     position: fixed; //fixed lo que hace es que el elemento queda fijo, no se puede mover
     inset: 0;
+    background-color: rgba(v.$negro, 0.5);
+    display: grid;
+    place-items: center;
+    animation: fadeIn ease-in 0.5s ;
 
-    background-color: rgba(v.$negro, 0.5)
+    &.fade-out {
+        animation: fadeOut ease-in 0.5s;
+    }
+
+    img{
+        max-width: 100rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

@@ -21,20 +21,32 @@ function crearGaleria() {
     }
 
     function mostrarImagen(i) {
+        const imagen = document.createElement('IMG')
+        imagen.src = `src/img/gallery/full/${i}.jpg`
+        imagen.alt = 'Imagen Galeria'
 
         // Generar Modal
         const modal = document.createElement('DIV')
         modal.classList.add('modal')
         modal.onclick = cerrarModal
 
+        modal.appendChild(imagen)
+
         // Agregar al HTML
         const body = document.querySelector('body')
+        body.classList.add('overflow-hidden')
         body.appendChild(modal)
     }
 }
 
 function cerrarModal() {
     const modal = document.querySelector('.modal')
+    modal.classList.add('fade-out')
 
-        modal?.remove()
+        setTimeout(() => {
+            modal?.remove()
+
+            const body = document.querySelector('body')
+            body.classList.remove('overflow-hidden')
+        }, 500);
 }
