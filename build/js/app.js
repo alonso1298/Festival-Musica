@@ -1,6 +1,21 @@
 document.addEventListener('DOMContentLoaded', function(){
+
+    navegacionFija()
     crearGaleria()
 })
+
+function navegacionFija(){
+    const header = document.querySelector('.header')
+    const sobreFestival = document.querySelector('.sobre-festival')
+
+    document.addEventListener('scroll', function(){
+        if (sobreFestival.getBoundingClientRect().bottom < 1) {
+            header.classList.add('fixed')
+        } else {
+            header.classList.remove('fixed')
+        }
+    })
+}
 
 function crearGaleria() {
 
