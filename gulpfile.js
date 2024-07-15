@@ -4,15 +4,20 @@ import gulpSass from 'gulp-sass'
 
 const sass = gulpSass(dartSass)
 
+import terser from 'gulp-terser'
+
 export function js(done){
     src('src/js/app.js')
+        .pipe(terser())
         .pipe( dest('build/js') )
     done()
 }
 
 export function css(done){
     src('src/scss/app.scss', {sourcemaps: true}) //sourcemaps podemos saber en que archivo de sass se encuentra el codigo para modificarlo
-        .pipe( sass().on('error', sass.logError) )
+        .pipe( sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError) )
         .pipe( dest('build/css', {sourcemaps: true}) )
 
     done()
