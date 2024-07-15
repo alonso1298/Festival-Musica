@@ -54,7 +54,8 @@
     a {
         color: v.$blanco;
         font-size: 2.4rem;
-        &:hover { // El & elimina los espacios en blanco
+        &:hover,
+        &.active { // El & elimina los espacios en blanco
             color: v.$amarillo;
         }
     }
@@ -68,3 +69,4 @@
 .header-contenedor {
     @include contenedor();
 }
+
