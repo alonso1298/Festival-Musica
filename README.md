@@ -35,7 +35,7 @@ Este proyecto es un sitio web para un festival de música, diseñado con un enfo
 
 Para iniciar el entorno de desarrollo y ver los cambios en tiempo real:
 ```bash
-gulp dev
+npm run dev
 ```
 # Estructura del proyecto 
 
