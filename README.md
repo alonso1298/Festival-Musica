@@ -1,8 +1,10 @@
-# Festival de Música
+# 🎧Festival de Música
 
 Este proyecto es un sitio web para un festival de música, diseñado con un enfoque en rendimiento y experiencia de usuario. Utiliza una combinación de Node.js, npm, Gulp, SASS, y varias técnicas modernas para asegurar un diseño responsivo y optimizado.
 
-## Tecnologías Utilizadas
+![Imagen de la pagina de inicio](https://github.com/alonso1298/Festival-Musica/blob/2be65c5ea2681af738f30911e29bd89e79af055b/src/img/HomePage.png)
+
+## 🛠️Tecnologías Utilizadas
 
 - **Node.js**: Entorno de ejecución para JavaScript en el servidor.
 - **npm**: Administrador de paquetes para JavaScript.
@@ -29,13 +31,11 @@ Este proyecto es un sitio web para un festival de música, diseñado con un enfo
     npm install
     ```
 
-## Uso
-
 ### Desarrollo
 
 Para iniciar el entorno de desarrollo y ver los cambios en tiempo real:
 ```bash
-npm run dev
+gulp dev
 ```
 # Estructura del proyecto 
 
